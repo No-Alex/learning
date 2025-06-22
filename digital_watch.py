@@ -12,6 +12,12 @@ s_watch_hours = s_watch_hours[-2:]
 s_watch_minutes = "0" + str(watch_minutes)
 s_watch_minutes = s_watch_minutes[-2:]
 actual = s_watch_hours + ':' + s_watch_minutes
+"""
+строка 14 - создать дополнительные строковые объекты с применением:
+  - [ ] f-строк
+  - [ ] функции format
+  - [ ] %
+"""
 print(actual)
 expected = "13:05"
 assert actual == expected

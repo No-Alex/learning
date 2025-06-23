@@ -19,8 +19,8 @@ actual = s_watch_hours + ':' + s_watch_minutes
 print(actual)
 """
 строка 14 - создать дополнительные строковые объекты с применением:
-  - [ ] f-строк
-  - [ ] функции format
+  - [x] f-строк
+  - [x] функции format
   - [ ] %
 """
 # f-string

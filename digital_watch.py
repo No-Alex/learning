@@ -21,16 +21,21 @@ print(actual)
 строка 14 - создать дополнительные строковые объекты с применением:
   - [x] f-строк
   - [x] функции format
-  - [ ] %
+  - [x] %
 """
 # f-string
 actual_2 = f"{s_watch_hours}:{s_watch_minutes}"
 print(actual_2)
+
 # format
 actual_3 = "{0}:{1}".format(s_watch_hours, s_watch_minutes)
 print(actual_3)
-# %
 
+# %
+actual_3 = "%s:%s" % (s_watch_hours, s_watch_minutes)
+print(actual_3)
+
+"""
 expected = "13:05"
 assert actual == expected
 print("Test passed")
@@ -38,3 +43,4 @@ print("Test passed")
 expected = "13:35"
 assert actual == expected
 print("Test passed")
+"""

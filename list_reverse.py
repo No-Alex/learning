@@ -1,7 +1,8 @@
-def create_range_decr_2_int(max_min):
-    """На вход программа получает через запятую два целых числа start и stop. При этом start может быть меньше stop, а может быть больше.
-    Создайте диапазон чисел с шагом 1 в обратном порядке от наибольшего числа к наименьшему (включительно). Выведите результат через запятую.
-
+""" Программа получает на вход через запятую два целых числа number_1 и number_2
+    При этом number_1 может быть меньше number_2, а может быть больше.
+    Создайте диапазон чисел с шагом 1 в обратном порядке
+    от наибольшего числа к наименьшему (включительно).
+    Выведите результат через запятую.
     Sample Input 1:
     0, 10
     Sample Output 1:
@@ -10,13 +11,23 @@ def create_range_decr_2_int(max_min):
     22, 15
     Sample Output 2:
     22, 21, 20, 19, 18, 17, 16, 15
+"""
+
+def create_range_decr_2_int(num_max, num_min):
+    """На вход функция получает два целых числа
+    Первое заведомо больше второго
+    Формирует диапазон чисел с шагом 1 в обратном порядке
+    от наибольшего числа к наименьшему (включительно).
+    Выводит результат через запятую.
     """
-    num_max, num_min = list(map(int, max_min.split(", ")))
-    if num_max > num_min:
-        print(list(range(num_max, num_min - 1, -1)))
-    else:
-        print(list(range(num_min, num_max - 1, -1)))
+    print(list(range(num_max, num_min - 1, -1)))
+
+startstop = "7, 9"
+start, stop = list(map(int, startstop.split(", ")))
+if stop > start:
+    bufer = stop
+    stop = start
+    start = bufer
 
 # call function
-startstop = "25, 9"
-create_range_decr_2_int(startstop)
+create_range_decr_2_int(start, stop)

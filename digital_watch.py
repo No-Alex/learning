@@ -2,6 +2,7 @@
 # TODO - переименовать по-питоновски модуль и идентификаторы
 # [x] выполнено
 # В Python преимущественно используется нотация under_score
+
 total_minutes = int(12305)
 
 watch_minutes = total_minutes % 60

@@ -6,15 +6,15 @@
 
 def get_last_digit(num: int) -> int:
     """возвращает последнюю цифру числа
-
     Args:
-        num:
-
-    Returns:
-
+        num: ожидается положительное целое число
+    Returns: возвращает целое однозначное число
     """
-    return 0
+    last_digit = int(str(num)[-1])
+    return last_digit
 
+
+print(get_last_digit(123))
 
 if __name__ == '__main__':
     assert get_last_digit(123) == 3

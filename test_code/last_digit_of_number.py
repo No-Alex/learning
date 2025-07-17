@@ -10,11 +10,13 @@ def get_last_digit(num: int) -> int:
         num: ожидается положительное целое число
     Returns: возвращает целое однозначное число
     """
-    last_digit = int(str(num)[-1])
-    return last_digit
+    return num % 10
 
-
-print(get_last_digit(123))
 
 if __name__ == '__main__':
     assert get_last_digit(123) == 3
+in_number = 148
+if in_number < 0:
+    print("Число - не натуральное")
+else:
+    get_last_digit(in_number)
